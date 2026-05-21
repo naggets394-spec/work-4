@@ -1,0 +1,11 @@
+D:\Users\1213-7\Documents\2-ИСП\Полевая\КИС\Практическая работа 4\bin\Debug\Практическая работа 4.exe.config
+D:\Users\1213-7\Documents\2-ИСП\Полевая\КИС\Практическая работа 4\bin\Debug\Практическая работа 4.exe
+D:\Users\1213-7\Documents\2-ИСП\Полевая\КИС\Практическая работа 4\bin\Debug\Практическая работа 4.pdb
+D:\Users\1213-7\Documents\2-ИСП\Полевая\КИС\Практическая работа 4\obj\Debug\Практическая работа 4.csproj.AssemblyReference.cache
+D:\Users\1213-7\Documents\2-ИСП\Полевая\КИС\Практическая работа 4\obj\Debug\Практическая_работа_4.Form1.resources
+D:\Users\1213-7\Documents\2-ИСП\Полевая\КИС\Практическая работа 4\obj\Debug\Практическая_работа_4.Properties.Resources.resources
+D:\Users\1213-7\Documents\2-ИСП\Полевая\КИС\Практическая работа 4\obj\Debug\Практическая работа 4.csproj.GenerateResource.cache
+D:\Users\1213-7\Documents\2-ИСП\Полевая\КИС\Практическая работа 4\obj\Debug\Практическая работа 4.csproj.CoreCompileInputs.cache
+D:\Users\1213-7\Documents\2-ИСП\Полевая\КИС\Практическая работа 4\obj\Debug\Практическая работа 4.exe
+D:\Users\1213-7\Documents\2-ИСП\Полевая\КИС\Практическая работа 4\obj\Debug\Практическая работа 4.pdb
+D:\Users\1213-7\Documents\2-ИСП\Полевая\КИС\Практическая работа 4\obj\Debug\Практическая работа 4.exe.config
