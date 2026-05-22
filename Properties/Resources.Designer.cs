@@ -63,9 +63,9 @@ namespace Практическая_работа_4.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap i__2_ {
+        internal static System.Drawing.Bitmap notebook_paper_background_grid_note_document_vector {
             get {
-                object obj = ResourceManager.GetObject("i-_2_", resourceCulture);
+                object obj = ResourceManager.GetObject("notebook-paper-background-grid-note-document-vector", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace Практическая_работа_4.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap notebook_paper_background_grid_note_document_vector {
+        internal static System.Drawing.Bitmap notebook_paper_background_grid_note_document_vector1 {
             get {
-                object obj = ResourceManager.GetObject("notebook-paper-background-grid-note-document-vector", resourceCulture);
+                object obj = ResourceManager.GetObject("notebook-paper-background-grid-note-document-vector1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
