@@ -13,8 +13,6 @@ namespace Практическая_работа_4
         uint column;
         uint row;
         public T[,] matrix;
-        T from;
-        T to;
         public Matrix(uint column, uint row)
         {
             this.column = column;
@@ -33,7 +31,7 @@ namespace Практическая_работа_4
                 if (to.GetType() == typeof(int))
                 {
                     Random random = new Random();
-                    double number = random.NextDouble();
+                    double number = random.Next();
                 }
             }
             else

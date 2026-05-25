@@ -39,7 +39,6 @@
             this.buttonFillRandom = new System.Windows.Forms.Button();
             this.groupBoxCreateMatrix = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.buttonCreateMatrix = new System.Windows.Forms.Button();
             this.labelRowNums = new System.Windows.Forms.Label();
             this.labelColNums = new System.Windows.Forms.Label();
             this.textBoxRowNums = new System.Windows.Forms.TextBox();
@@ -100,7 +99,7 @@
             this.groupBoxRandom.Controls.Add(this.buttonFillRandom);
             this.groupBoxRandom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBoxRandom.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.groupBoxRandom.Location = new System.Drawing.Point(488, 230);
+            this.groupBoxRandom.Location = new System.Drawing.Point(487, 202);
             this.groupBoxRandom.Name = "groupBoxRandom";
             this.groupBoxRandom.Size = new System.Drawing.Size(243, 121);
             this.groupBoxRandom.TabIndex = 2;
@@ -142,18 +141,18 @@
             // buttonFillRandom
             // 
             this.buttonFillRandom.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonFillRandom.Location = new System.Drawing.Point(16, 90);
+            this.buttonFillRandom.Location = new System.Drawing.Point(15, 90);
             this.buttonFillRandom.Name = "buttonFillRandom";
-            this.buttonFillRandom.Size = new System.Drawing.Size(221, 24);
+            this.buttonFillRandom.Size = new System.Drawing.Size(208, 24);
             this.buttonFillRandom.TabIndex = 0;
             this.buttonFillRandom.Text = "Заполнить!";
             this.buttonFillRandom.UseVisualStyleBackColor = true;
+            this.buttonFillRandom.Click += new System.EventHandler(this.buttonFillRandom_Click);
             // 
             // groupBoxCreateMatrix
             // 
             this.groupBoxCreateMatrix.BackColor = System.Drawing.Color.Gainsboro;
             this.groupBoxCreateMatrix.Controls.Add(this.label5);
-            this.groupBoxCreateMatrix.Controls.Add(this.buttonCreateMatrix);
             this.groupBoxCreateMatrix.Controls.Add(this.labelRowNums);
             this.groupBoxCreateMatrix.Controls.Add(this.labelColNums);
             this.groupBoxCreateMatrix.Controls.Add(this.textBoxRowNums);
@@ -162,7 +161,7 @@
             this.groupBoxCreateMatrix.ForeColor = System.Drawing.Color.MidnightBlue;
             this.groupBoxCreateMatrix.Location = new System.Drawing.Point(487, 81);
             this.groupBoxCreateMatrix.Name = "groupBoxCreateMatrix";
-            this.groupBoxCreateMatrix.Size = new System.Drawing.Size(241, 121);
+            this.groupBoxCreateMatrix.Size = new System.Drawing.Size(241, 98);
             this.groupBoxCreateMatrix.TabIndex = 3;
             this.groupBoxCreateMatrix.TabStop = false;
             this.groupBoxCreateMatrix.Text = "Создать матрицу";
@@ -174,17 +173,6 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(0, 16);
             this.label5.TabIndex = 9;
-            // 
-            // buttonCreateMatrix
-            // 
-            this.buttonCreateMatrix.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonCreateMatrix.Location = new System.Drawing.Point(16, 87);
-            this.buttonCreateMatrix.Name = "buttonCreateMatrix";
-            this.buttonCreateMatrix.Size = new System.Drawing.Size(216, 23);
-            this.buttonCreateMatrix.TabIndex = 5;
-            this.buttonCreateMatrix.Text = "Создать!";
-            this.buttonCreateMatrix.UseVisualStyleBackColor = true;
-            this.buttonCreateMatrix.Click += new System.EventHandler(this.buttonCreateMatrix_Click);
             // 
             // labelRowNums
             // 
@@ -240,6 +228,7 @@
             this.textBoxValue.Name = "textBoxValue";
             this.textBoxValue.Size = new System.Drawing.Size(60, 22);
             this.textBoxValue.TabIndex = 8;
+            this.textBoxValue.TextChanged += new System.EventHandler(this.textBoxValue_TextChanged);
             // 
             // groupBoxHandFill
             // 
@@ -254,7 +243,7 @@
             this.groupBoxHandFill.Controls.Add(this.textBoxHandRow);
             this.groupBoxHandFill.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBoxHandFill.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.groupBoxHandFill.Location = new System.Drawing.Point(488, 357);
+            this.groupBoxHandFill.Location = new System.Drawing.Point(487, 329);
             this.groupBoxHandFill.Name = "groupBoxHandFill";
             this.groupBoxHandFill.Size = new System.Drawing.Size(242, 124);
             this.groupBoxHandFill.TabIndex = 9;
@@ -288,6 +277,7 @@
             this.buttonEnter.Text = "Далее";
             this.buttonEnter.UseMnemonic = false;
             this.buttonEnter.UseVisualStyleBackColor = true;
+            this.buttonEnter.Click += new System.EventHandler(this.buttonEnter_Click);
             // 
             // labelHandRow
             // 
@@ -313,7 +303,7 @@
             this.labelMethod.BackColor = System.Drawing.Color.Transparent;
             this.labelMethod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelMethod.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labelMethod.Location = new System.Drawing.Point(43, 386);
+            this.labelMethod.Location = new System.Drawing.Point(43, 376);
             this.labelMethod.Name = "labelMethod";
             this.labelMethod.Size = new System.Drawing.Size(160, 64);
             this.labelMethod.TabIndex = 10;
@@ -322,10 +312,10 @@
             // textBoxMethod
             // 
             this.textBoxMethod.Enabled = false;
-            this.textBoxMethod.Location = new System.Drawing.Point(229, 385);
+            this.textBoxMethod.Location = new System.Drawing.Point(243, 375);
             this.textBoxMethod.Multiline = true;
             this.textBoxMethod.Name = "textBoxMethod";
-            this.textBoxMethod.Size = new System.Drawing.Size(226, 80);
+            this.textBoxMethod.Size = new System.Drawing.Size(226, 75);
             this.textBoxMethod.TabIndex = 11;
             // 
             // menuStrip1
@@ -383,7 +373,7 @@
             // label1
             // 
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Location = new System.Drawing.Point(491, 216);
+            this.label1.Location = new System.Drawing.Point(487, 191);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(240, 2);
             this.label1.TabIndex = 13;
@@ -394,7 +384,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(762, 493);
+            this.ClientSize = new System.Drawing.Size(762, 471);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxMethod);
             this.Controls.Add(this.labelMethod);
@@ -435,7 +425,6 @@
         private System.Windows.Forms.TextBox textBoxValue;
         private System.Windows.Forms.TextBox textBoxHandCol;
         private System.Windows.Forms.TextBox textBoxHandRow;
-        private System.Windows.Forms.Button buttonCreateMatrix;
         private System.Windows.Forms.Label labelRowNums;
         private System.Windows.Forms.Label labelColNums;
         private System.Windows.Forms.TextBox textBoxRowNums;
