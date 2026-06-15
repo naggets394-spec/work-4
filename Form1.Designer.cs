@@ -70,11 +70,11 @@
             // 
             // textBoxMatrix
             // 
-            this.textBoxMatrix.Enabled = false;
             this.textBoxMatrix.ForeColor = System.Drawing.Color.IndianRed;
             this.textBoxMatrix.Location = new System.Drawing.Point(33, 81);
             this.textBoxMatrix.Multiline = true;
             this.textBoxMatrix.Name = "textBoxMatrix";
+            this.textBoxMatrix.ReadOnly = true;
             this.textBoxMatrix.Size = new System.Drawing.Size(436, 332);
             this.textBoxMatrix.TabIndex = 0;
             // 
@@ -254,15 +254,15 @@
             this.labelMethod.Name = "labelMethod";
             this.labelMethod.Size = new System.Drawing.Size(160, 64);
             this.labelMethod.TabIndex = 10;
-            this.labelMethod.Text = "Седловая точка \r\n(минимальная в\r\nстроке и максимальная\r\nв столбце)";
+            this.labelMethod.Text = "Седловые точка \r\n(минимальная в\r\nстроке и максимальная\r\nв столбце)";
             this.labelMethod.Click += new System.EventHandler(this.labelMethod_Click);
             // 
             // textBoxMethod
             // 
-            this.textBoxMethod.Enabled = false;
             this.textBoxMethod.Location = new System.Drawing.Point(243, 434);
             this.textBoxMethod.Multiline = true;
             this.textBoxMethod.Name = "textBoxMethod";
+            this.textBoxMethod.ReadOnly = true;
             this.textBoxMethod.Size = new System.Drawing.Size(226, 75);
             this.textBoxMethod.TabIndex = 11;
             // 

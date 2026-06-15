@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Runtime.Serialization.Formatters;
@@ -41,15 +42,16 @@ namespace Практическая_работа_4
                 {
                     for (int j = 0; j < row; j++)
                     {
-                        result += $"{matrix[i, j]}, ";
+                        result += matrix[i, j].ToString().Padleft(3) + " ";
                     }
-                    result += "\n";
+                    result += Environment.NewLine;
                 }
-                result = result.Substring(0, result.Length - 2);
                 textBoxMatrix.Text = result;
             }
             catch (Exception ex)
             {
+                MessageBox.Show(ex.ToString(), "Ошибка",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
         int curRow = 1;
@@ -76,7 +78,7 @@ namespace Практическая_работа_4
                     {
                         for (int j = 0; j < column; j++)
                         {
-                            result += matrix[i, j].ToString().PadLeft(4) + " ";
+                            result += matrix[i, j].ToString().Padleft(3) + " ";
                         }
                         result += Environment.NewLine;
                     }
@@ -95,10 +97,42 @@ namespace Практическая_работа_4
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 textBoxValue.Clear();
             }
-            void SaddlePoints()
+        }
+        public void SaddlePoints(TextBox textBoxMethod)
+        {
+            string saddlepoints = string.Empty;
+            for (int i = 0; i < row; i++)
             {
-
+                for (int j = 0; j < column; j++)
+                {
+                    int cur = matrix[j, i];
+                    bool minInRow = true;
+                    for (int k = 0; k < column; k++)
+                    {
+                        if (matrix[k, i] < cur)
+                        {
+                            minInRow = false;
+                            break;
+                        }
+                    }
+                    bool maxInCol = true;
+                    for (int k = 0; k < row; k++)
+                    {
+                        if (matrix[j, k] > cur)
+                        {
+                            maxInCol = false;
+                            break;
+                        }
+                    }
+                    if (minInRow && maxInCol)
+                    {
+                        saddlepoints += $"Седловая точка в строке ({i};{j})";
+                        saddlepoints += Environment.NewLine;
+                    }
+                }
             }
+            if (saddlepoints.Length == 0) saddlepoints = "Седловых точек нет!";
+            textBoxMethod.Text = saddlepoints;
         }
     }
 }
